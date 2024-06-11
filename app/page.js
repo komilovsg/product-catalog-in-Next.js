@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Pagination from "./pagination/pagination";
+import Pagination from "./pagination/page";
 
 const POSTS_PER_PAGE = 20;
 
