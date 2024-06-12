@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -44,9 +45,24 @@ a:hover {
   padding: 20px; /* Дополнительный отступ внутри контейнера */
 }
 
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+  .contant {
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  }
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 480px) {
+  .contant {
+    grid-template-columns: 1fr; /* Одна колонка */
+  }
+}
+
+
 
 .post{
-  width: 500px;
+  /* width: 500px; */
   margin-top: 50px;
   padding: 20px;
   border-radius: 5px;
